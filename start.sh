@@ -26,7 +26,7 @@ qemu-system-x86_64 \
     -daemonize
 
 # Start noVNC
-websockify --web=/novnc 6080 localhost:5901 &
+websockify --web=/novnc 6080 localhost:5901 --daemon
 
 echo "================================================"
 echo " 🖥️  VNC: http://localhost:6080/vnc.html"
